@@ -1,26 +1,18 @@
-<!-- App.vue -->
+<template>
+  <Test />
+</template>
 
-<v-app>
-    <v-navigation-drawer app>
-      <!-- -->
-    </v-navigation-drawer>
-  
-    <v-app-bar app>
-      <!-- -->
-    </v-app-bar>
-  
-    <!-- Sizes your content based upon application components -->
-    <v-main>
-  
-      <!-- Provides the application the proper gutter -->
-      <v-container fluid>
-  
-        <!-- If using vue-router -->
-        <router-view></router-view>
-      </v-container>
-    </v-main>
-  
-    <v-footer app>
-      <!-- -->
-    </v-footer>
-</v-app>
+<script>
+console.log("Test");
+import Test from "./Test.vue";
+
+export default {
+  components: {
+    Test,
+  },
+
+  mounted() {
+    console.log("component mounted");
+  },
+};
+</script>
